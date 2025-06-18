@@ -9,6 +9,11 @@ import {
 import { Header } from "./components/Header.jsx";
 import { Home } from "./pages/Home/index.jsx";
 import { About } from "./pages/About/index.js";
+import { Services } from "./pages/Services/index.js";
+import { Account } from "./pages/Account/index.js";
+import { Dashboard } from "./pages/Dashboard/index.js";
+import { Tasks } from "./pages/Tasks/index.js";
+import { Chat } from "./pages/Chat/index.js";
 import { NotFound } from "./pages/_404.jsx";
 import "./style.css";
 
@@ -20,6 +25,11 @@ export function App() {
         <Router>
           <Route path="/" component={Home} />
           <Route path="/About" component={About} />
+          <Route path="/Services" component={Services} />
+          <Route path="/Account" component={Account} />
+          <Route path="/Dashboard" component={Dashboard} />
+          <Route path="/Tasks" component={Tasks} />
+          <Route path="/Chat" component={Chat} />
           <Route default component={NotFound} />
         </Router>
       </main>
